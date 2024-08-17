@@ -1,0 +1,91 @@
+/* Start Variables*/
+:root {
+    --main-color: rgb(88, 109, 246); ;
+}
+/* End Variables */
+/* Start Global Rules */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Work Sans", sans-serif;
+}
+
+.container {
+    margin-top: 100px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+/* Small */
+@media (min-width: 750px ){
+    .container {
+        width: 750px;
+    }
+}
+/* Medium */
+@media (min-width: 992px ){
+    .container {
+        width: 970px;
+    }
+}
+/* Large */
+@media (min-width: 1200px ){
+    .container {
+        width: 1170px;
+    }
+}
+/* End Global Rules */
+img {
+    width: 350px;
+    height: 350px;
+    border-radius: 10px;
+    z-index: -1;
+}
+.container .gro {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+    gap: 20px;
+}
+.page-title h1 {
+    font-weight: 500;
+}
+.page-title div ,
+.container .gro .feat p {
+    font-size: 17px;
+    font-weight: 500;
+    color: var(--main-color);
+}
+.feat {
+    position: relative;
+    margin-top: 20px;
+}
+.container .gro .feat h3 {
+    font-size: 25px;
+    font-weight: 500;
+
+}
+i {
+    color: var(--main-color);
+    font-size: 15px;
+    position:relative;
+    bottom: 15px;
+    left: 129px;
+    z-index: 19999;
+
+}
+.feat div {
+    background-color: white;
+    position:absolute;
+    width: 30px;
+    height: 30px;
+    bottom: 125px;
+    right: 40px;
+    transform: rotate(45deg);
+    
+}
+
